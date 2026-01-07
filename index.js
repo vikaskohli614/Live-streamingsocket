@@ -635,6 +635,10 @@ io.on('connection', (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+    res.send("Wahoo  Backend is Working.")
+})
+
 httpServer.listen(PORT, () => {
   console.log(`
 ╔═══════════════════════════════════════════════╗
